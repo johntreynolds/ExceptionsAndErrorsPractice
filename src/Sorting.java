@@ -24,10 +24,6 @@ public class Sorting implements Comparator<Student>
 						// Scanner for the .txt file
 						Scanner myFile = new Scanner(new File("NamesGPAInfractionList.csv"));
 						// Glosses over the introductory line in the CSV file
-						if (myFile.hasNextLine())
-							{
-								myFile.nextLine();
-							}
 						// Adds all of the data to the arraylist
 						while (myFile.hasNextLine())
 							{
@@ -35,10 +31,12 @@ public class Sorting implements Comparator<Student>
 								// added to the arraylist
 								// Provides for "parametric" i guess editing of the text file for the program to
 								// still function
-								String line = myFile.nextLine();
-								// Removes any empty lines at the end of the file
-								if (line.trim().isEmpty())
-									continue;
+								String line = myFile.nextLine().trim();
+
+								if (line.isEmpty())
+									{
+										continue;
+									}
 								String[] data = line.split(",");
 								String firstName = data[0].substring(0, data[0].lastIndexOf(" "));
 								String lastName = data[0].substring(data[0].lastIndexOf(" ") + 1);
@@ -204,7 +202,7 @@ public class Sorting implements Comparator<Student>
 					{
 						System.out.println("You entered an index for a student that doesn't exist");
 						System.out.println("Try Again");
-						
+
 						pickStudent();
 					}
 			}
