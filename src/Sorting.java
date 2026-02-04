@@ -67,6 +67,7 @@ public class Sorting implements Comparator<Student>
 
 		public static void askForChoices()
 			{
+				
 				System.out.println("What would you like to sort by?");
 				System.out.println("1) First Name");
 				System.out.println("2) Last Name");

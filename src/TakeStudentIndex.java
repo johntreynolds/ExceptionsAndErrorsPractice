@@ -6,7 +6,7 @@ public class TakeStudentIndex
 		public static void main(String[] args) throws IOException
 			{
 				// Intro
-				System.out.println("The CSV format is 'first last,GPA,");
+				System.out.println("The CSV format is 'First Last, GPA, Infractions'");
 				System.out.println(
 						"This program allows for you to sort by First Name, Last Name, GPA, or Number of Infractions");
 				System.out.println("You can also pick an index from a sorted list and get the student in that index");
