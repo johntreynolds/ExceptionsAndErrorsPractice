@@ -5,7 +5,7 @@ public class TakeStudentIndex
 
 		public static void main(String[] args) throws IOException
 			{
-				//MASTER BRANCH
+				//Fred the Wonder Branch
 				
 				// Intro
 				System.out.println("The CSV format is 'First Last, GPA, Infractions'");
